@@ -14,6 +14,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { PostListComponent } from './posts/post-list/post-list.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 
@@ -21,7 +23,8 @@ import {MatIconModule} from '@angular/material/icon';
   declarations: [
     AppComponent,
     PostCreateComponent,
-    HeaderComponent
+    HeaderComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
