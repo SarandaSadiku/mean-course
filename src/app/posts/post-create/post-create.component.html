@@ -1,8 +1,10 @@
 
 <mat-card>
-  <mat-label>Write Post</mat-label>
   <mat-form-field appearance="outline">
-    <textarea matInput cols="30" rows="6" [(ngModel)]="enteredValue"></textarea>
+    <input matInput type="text" [(ngModel)]="enteredTitle">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <textarea matInput cols="30" rows="6" [(ngModel)]="enteredContent"></textarea>
   </mat-form-field>
   <button mat-raised-button (click)="onAddPost()">Save Post</button>
 </mat-card>
